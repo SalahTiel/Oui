@@ -1,0 +1,120 @@
+@media screen and (max-width: 1280px){
+    header .container nav{
+        display: none;
+    }
+    header .container img{
+        width: 8rem;
+    }
+
+
+
+    section.home{
+        height: 90vh;
+        flex-direction: column;
+    }
+    section.home .text{
+        width: 100%;
+    }
+    section.home .text img{
+        display: none;
+    }
+    section.home .text h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    section.home .text p.subtitle{
+        text-align: center;
+    }
+    section.home .text a.button{
+        margin-inline: auto;
+    }
+    section.home .image{
+        width: 100%;
+    }
+    section.home .image img{
+        width: 100%;
+    }
+
+
+
+    section.services .carousel .carousel-content{
+        flex-direction: column;
+    }
+    section.services .carousel .carousel-content .card{
+        width: 70%;
+        margin-inline: auto;
+        margin-top: 2rem;
+    }
+    section.services .wrapper{
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        border-radius: 0;
+        gap: 2rem;
+        padding-top: 1rem;
+        border-radius: 20px 20px 30px 30px;
+    }
+    section.services .wrapper p{
+        text-align: center;
+    }
+    section.services .wrapper a{
+        text-align: center;
+        width: 100%;
+    }
+
+
+
+    section.customers div.wrapper{
+        flex-direction: column;
+    }
+    section.customers div.wrapper .card{
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    div.proposal{
+        text-align: center;
+        flex-direction: column;
+    }
+    div.companies .images{
+        margin-top: 2rem;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+
+
+    section.about{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    section.about img.main{
+        order: 2;
+        width: 70%;
+        margin-inline: auto;
+    }
+    section.about .text{
+        width: 100%;
+    }
+
+
+
+    section.forms .wrapper{
+        padding: 1rem;
+        flex-direction: column;
+        border-radius: 20px;
+        height: fit-content;
+    }
+    section.forms .wrapper .text{
+        width: 100%;
+    }
+    section.forms .wrapper .text h2{
+        font-size: 2rem;
+    }
+    section.forms .wrapper .text p.subtitle{
+        margin-block: 1rem;
+    }
+    section.forms form{
+        width: 100%;
+    }
+}

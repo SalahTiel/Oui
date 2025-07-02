@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EEEEEE;
+    overflow-x: hidden;
+}
+
+header{
+    position: absolute;
+    width: 80vw;
+    top: 0;
+    right: 0rem;
+    margin: 2rem 10vw 0;
+    border-radius: 100px;
+    border: 1px solid #0008A4;
+    padding: 0.5rem;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(153, 153, 153, 0.219);
+    border-radius: 100px;
+}
+header .container img{
+    width: 12rem;
+}
+header .container nav{
+    display: flex;
+    gap: 2rem;
+}
+header .container nav a{
+    text-decoration: none;
+    font: 400 1rem 'Poppins';
+    padding: 1rem 4rem; 
+    border-radius: 100px;
+    border: 1px solid #0008A4;
+    color: #0008A4;
+}
+header .container nav a:hover,
+header .container a.button:hover{
+    color: #BCFD00;
+    transition: all 300ms;
+    background-color: #0008A4;
+}
+header .container nav a.button{
+    background-color: #BCFD00;
+    border: none;
+}
+
+
+
+section.home{
+    height: 80vh;
+    margin: 20vh 10vw 0;
+    display: flex;
+    justify-content: space-between;
+}
+section.home .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section.home .text img{
+    width: 5rem;
+}
+section.home .text h1{
+    font: 400 3rem 'Poppins';
+    color: #0008A4;
+}
+section.home .text h1 span{
+    font-weight: 500;
+    background-color: #BCFD00;
+}
+section.home .text p.subtitle{
+    font: 400 1rem 'Poppins';
+    color: #0008A4;
+}
+section.home .text p.subtitle span{
+    font-weight: 700;
+}
+section.home .text a.button{
+    margin-top: 4rem;
+    padding: 1rem;
+    background-color: #BCFD00;
+    display: flex;
+    width: max-content;
+    border-radius: 100px;
+    list-style: none;
+    text-decoration: none;
+    color: #0008A4;
+}
+section.home .text a.button:hover{
+    background-color: #0008A4;
+    color: #BCFD00;
+    transition: all 300ms;
+}
+section.home .text a.button p{
+    font: 500 1rem 'Poppins';
+}
+section.home .image{
+    width: 50%;
+    position: relative;
+}
+section.home .image img{
+    width: 40vw;
+    position: absolute;
+    bottom: -5rem;
+    z-index: -2;
+}
+section.home .image .shadow{
+   width: 15vw;
+   height: 1px;
+   display: block;
+   box-shadow: 0px 0px 180px 120px #FFFFFF;
+   position: absolute;
+   bottom: -10px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: -1;
+}
+
+
+
+section.services{
+    padding: 3vh 10vw 4rem 10vw;
+    background-color: #FFFFFF;
+}
+
+div.line{
+    width: 50%;
+    display: block;
+    margin-inline: auto;
+    margin-block: 1rem;
+    height: 2px;
+    background: #ffffff;
+    background: linear-gradient(90deg, 
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(188, 253, 0, 1) 30%, 
+    rgba(188, 253, 0, 1) 70%, 
+    rgba(255, 255, 255, 0) 100%);
+}
+
+section.services h2{
+    color: #0008A4;
+    font: 400 1.2rem 'Poppins';
+    text-align: center;
+}
+section.services h2 span{
+    background-color: #BCFD00;
+    font-weight: 700;
+    padding-inline: 0.5rem;
+}
+section.services h3{
+    color: #0008A4;
+    font: 400 1.2rem 'Poppins';
+    text-align: center;
+}
+section.services h3 span{
+    font-weight: 700;
+}
+
+section.services .carousel .carousel-content{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 5vh;
+    transition: transform 300ms;
+}
+section.services .carousel .carousel-content .card{
+    position: relative;
+    width: 12vw;
+}
+
+section.services .carousel .carousel-content .card img{
+    width: 100%;
+    border-radius: 20px;
+}
+section.services .carousel .carousel-content .card .button{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 0rem;
+    border-radius: 10px 10px 20px 20px;
+    text-align: center;
+    color: #0008A4;
+    font: 500 1rem 'Poppins';
+    background-color: #EEEEEE;
+    border-bottom: 8px solid #BCFD00;
+}
+section.services .wrapper{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 4rem;
+    align-items: center;
+    border-radius: 100px;
+    padding-left: 4rem;
+    margin-inline: auto;
+    border: 1px solid #0008A4;
+}
+section.services .wrapper p{
+    font: 400 1rem 'Poppins';
+    color: #0008A4;
+}
+section.services .wrapper a{
+    font: 500 1rem 'Poppins';
+    color: #0008A4;
+    padding: 1rem 4rem;
+    border-radius: 100px;
+    background-color: #BCFD00;
+    text-decoration: none;
+}
+section.services .wrapper a:hover{
+    background-color: #0008A4;
+    color: #BCFD00;
+    transition: all 300ms;
+}
+
+
+
+div.strip{
+    width: max-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-block: 1rem;
+    background-color: #BCFD00;
+    animation: slide 18s linear infinite;
+}
+div.strip p{
+    font: 400 1rem 'Poppins';
+    color: #0008A4;
+    width: 20rem;
+    text-align: center;
+}
+div.strip p span{
+    font-weight: 700;
+}
+div.strip img{
+    width: 1.5rem;
+}
+@keyframes slide{
+    0%{transform: translate(calc((23.5 + 2rem) * (-1)));}
+    100%{transform: translate(calc((23.5rem + 2rem) * (-5)));}
+}
+
+
+section.customers{
+    padding: 4rem 10vw;
+    background-color: #FFFFFF;
+}
+section.customers h2{
+    font: 500 2.5rem 'Poppins';
+    text-align: center;
+    color: #0008A4;
+}
+section.customers p.subtitle{
+    font: 400 1rem 'Poppins';
+    text-align: center;
+    color: #0008A4;
+}
+section.customers div.line{
+    margin: 2rem auto 4rem;
+}
+section.customers div.wrapper{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+section.customers div.wrapper .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    border-radius: 15px;
+    padding: 1rem;
+    width: 25vw;
+    height: 18rem;
+    border: 2px solid #EEEEEE;
+    box-shadow: 5px 5px 0px 5px #BCFD00;
+}
+section.customers div.wrapper .card p.icon{
+    font-size: 3.5rem;
+}
+section.customers div.wrapper .card p.title{
+    font: 500 2rem 'Poppins';
+    color: #0008A4;
+}
+section.customers div.wrapper .card p.subtitle{
+    font-size: 0.8rem;
+    text-align: left;
+}
+.proposal{
+    padding: 2rem;
+    background-color: #BCFD00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+.proposal p{
+    color: #0008A4;
+    font: 400 1.2rem 'Poppins';
+}
+.proposal p span{
+    font-weight: 700;
+}
+.proposal .button{
+    font: 400 1.2rem 'Poppins';
+    padding: 1rem 4rem;
+    background-color: #0008A4;
+    border: 1px solid #0008A4;
+    color: #BCFD00;
+    border-radius: 100px;
+    text-decoration: none;
+}
+.proposal .button:hover{
+    background-color: #BCFD00;
+    color: #0008A4;
+    transition: all 300ms;
+}
+.companies{
+    padding-block: 4rem;
+    background-color: #FFFFFF;
+}
+.companies p.title{
+    color: #0008A4;
+    font: 400 1.2rem 'Poppins';
+    text-align: center;
+}
+.companies p.title span{
+    font-weight: 700;
+}
+.companies p.title span:first-child{
+    background-color: #BCFD00;
+    padding-inline: 5px;
+}
+.companies .images{
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    justify-content: space-between;
+    width: 80vw;
+}
+.companies .images img{
+    width: auto;
+    height: auto;
+}
+
+
+
+section.about{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    padding: 4rem 10vw;
+    background-color: #EEEEEE;
+}
+section.about .text h2{
+    color: #0008A4;
+    font: 400 1.2rem 'Poppins';
+}
+section.about img.main{
+    width: 30%;
+}
+section.about .text{
+    width: 30%;
+}
+section.about .text h2 span{
+    background-color: #BCFD00;
+    font-weight: 700;
+    padding-inline: 5px;
+}
+section.about .text div.line{
+    width: 100%;
+    margin-block: 1rem;
+}
+section.about .text h3{
+    font: 700 1.5rem 'Poppins';
+    color: #0008A4;
+}
+section.about .text .paragraph{
+    font: 400 1rem 'Poppins';
+    color: #0008A4;
+    margin-top: 1rem;
+}
+section.about .text .paragraph span{
+    font-weight: 700;
+}
+section.about .text img.logo{
+    width: 10rem;
+    margin-top: 2rem;
+}
+
+
+
+section.forms{
+    padding: 4rem 10vw 10rem;
+}
+section.forms .wrapper{
+    background-color: #0008A4;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 8rem;
+    height: 80vh;
+}
+section.forms .wrapper .text{
+    width: 50%;
+}
+section.forms .wrapper .text h2{
+    font: 500 3rem 'Poppins';
+    color: #FFFFFF;
+}
+section.forms .wrapper .text h2 span{
+    color: #BCFD00;
+    font-weight: 700;
+}
+section.forms .wrapper .text .subtitle{
+    font: 400 1rem 'Poppins';
+    color: #FFFFFF;
+    margin-block: 4rem;
+}
+section.forms form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+section.forms form label{
+    margin: 1rem 0 0.5rem ;
+    font: 500 1rem 'Poppins';
+    color: #BCFD00;
+}
+section.forms form input{
+    font: 500 1rem 'Poppins';
+    padding: 1rem;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    color: #0008A4;
+    background-color: #FFFFFF;
+}
+section.forms form button{
+    font: 700 1rem 'Poppins';
+    color: #0008A4;
+    background-color: #BCFD00;
+    border: 2px solid #BCFD00;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+section.forms form button:hover{
+    background-color: #0008A4;
+    color: #BCFD00;
+    transition: all 300ms;
+}
+
+
+
+footer{
+    padding: 20vh 10vw;
+    background-color: #BCFD00;
+}
+
