@@ -117,4 +117,17 @@
     section.forms form{
         width: 100%;
     }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+    footer .left img.logo{
+        display: block;
+        margin-inline: auto;
+    }
+    footer .left a{
+        justify-content: center;
+    }
 }
