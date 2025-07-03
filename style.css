@@ -469,7 +469,31 @@ section.forms form button:hover{
 
 
 footer{
-    padding: 20vh 10vw;
+    padding: 10vh 10vw;
     background-color: #BCFD00;
+    display: flex;
+    justify-content: space-between;
 }
-
+footer .left img.logo{
+    width: 14rem;
+}
+footer .left a{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+footer .left a img{
+    width: 2.5rem;
+}
+footer .left a p{
+    font: 500 1rem 'Poppins';
+    color: #0008A4;
+}
+footer p.CNPJ{
+    font: 500 1rem 'Poppins';
+    color: #0008A4;
+}
